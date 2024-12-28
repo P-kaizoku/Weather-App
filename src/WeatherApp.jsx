@@ -3,8 +3,9 @@ import React, { useState } from "react";
 function WeatherApp() {
   const [input, setInput] = useState("");
   const [result, setResult] = useState({});
-const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
-//   console.log(process.env);
+
+  // Fetch the API key from environment variables
+  const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
   function handleInputChange(e) {
     setInput(e.target.value);
